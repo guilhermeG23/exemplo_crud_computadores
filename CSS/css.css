@@ -1,0 +1,15 @@
+/*CSS simples*/
+a, label, p, li, input, button, select {
+	border-radius: 5px;
+	font-size: 18px;
+	margin: 10px;
+}
+.tabela {
+	margin: 1%;
+	width: 50%;
+}
+.tabela tr td {
+	text-align: center;
+	padding: 10px;
+	border: 1px solid black;
+}
