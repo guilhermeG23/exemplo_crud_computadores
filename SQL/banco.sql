@@ -14,6 +14,11 @@ create table if not exists Setores (
 	Setor varchar(44) not null
 );
 
+insert into Setores values (0, "RH");
+insert into Setores values (0, "Financeiro");
+insert into Setores values (0, "Contabilidade");
+insert into Setores values (0, "Produção");
+
 create table if not exists Relacionamento (
 	PKPC int not null,
 	PKSetor int not null,
@@ -21,3 +26,4 @@ create table if not exists Relacionamento (
 	foreign key (PKSetor) references Setores(IDSetor),
 	primary key(PKPC, PKSetor)
 );
+
